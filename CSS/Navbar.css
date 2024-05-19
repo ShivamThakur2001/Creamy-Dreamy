@@ -1,0 +1,125 @@
+#navigation
+{   
+    width: 100vw;
+    height: 60px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 5px 5px black;
+    z-index: 10;
+}
+.mainlist1
+{
+    list-style: none;
+    display: flex;
+    width: 40%;
+    height: 100%;
+    /* background-color: red; */
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 2%; */
+}
+.sublist{
+    list-style: none;
+    position: relative;
+}
+.li2
+{
+    position: absolute;
+    bottom: -0.5vw;
+    left: 3vw;
+    /* background-color: yellow; */
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.li1
+{
+    font-size: 1.5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: aliceblue;
+    cursor: pointer;
+}
+.li1:hover
+{
+    color: black;
+    text-decoration: underline 0.2vw solid black;
+}
+.mainlist2
+{
+    list-style: none;
+    display: flex;
+    width: 10vw;
+    height: 100%;
+    /* background-color: red; */
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2%; 
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: aliceblue;
+    cursor: pointer;
+    overflow: hidden;
+}
+.li3
+{
+    font-size: 1.5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+footer
+{
+    width: 100vw;
+    height:5vw;
+    background-color: rgb(152, 220, 220);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footerList
+{
+    display: flex;
+    list-style: none;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fli
+{
+    color:blueviolet;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    width: 15vw;
+    font-size: 1vw;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footerList:hover
+{
+    color: skyblue;
+    text-decoration: dashed;
+}
+.copy
+{
+    font-size: 1vw;
+    color:blueviolet;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+

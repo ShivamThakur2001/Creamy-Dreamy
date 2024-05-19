@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creamy Dreamy- Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/Navbar.css">    
+<link rel="stylesheet" media="screen and (orientation:landscape)" href="../CSS/CartL.css">
+<link rel="stylesheet" media="screen and (orientation:portrait)" href="../CSS/CartP.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav id="navigation">
+        <ul class="mainlist1">
+            <li class="li1 "> <a href="./homepage.html">Home</a></li>
+            <li class="li1 "> <a href="./AboutPage.html">About</a></li>
+            <li class="li1 "> <a href="#">Cart</a>
+                <ul class="sublist">
+                    <li class="li2">1</li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="mainlist2">
+            <li class="li3"><a  href="../index.html">Logout</a></li>
+        </ul>
+    </nav>
+  <div id="maincontainer">
+    <div class="cartContainer">
+        <div class="cartImageContainer">
+            <img class="cartImage" src="../Assets/four.jpg" alt="">
+        </div>
+        <div class="cartInfoContainer">
+              <div class="productName">
+               <span class="pName">Cup Ice Cream</span>
+                <div class="pNamesec2">
+                <div class="incDec">
+                    <input class="inps" type="button" value="-">
+                    <input class="inps" value="1" readonly>
+                    <input class="inps" type="button" value="+" >
+                </div>
+                <i id="fa-solid" class="fa-solid fa-trash fa-fade"></i>
+            </div>
+              </div>
+              <div class="productDetails">
+                <h1 class="pdel">Quantity:<span>1</span>L</h1>
+                <h1 class="pdel">A.Price:<span>150</span>Rs</h1>
+                <h1 class="pdel">D.prize:<span>120</span>Rs</h1>
+              </div>
+        </div>
+      </div>
+
+      <div class="cartContainer">
+        <div class="cartImageContainer">
+            <img class="cartImage" src="../Assets/nine.jpg" alt="">
+        </div>
+        <div class="cartInfoContainer">
+              <div class="productName">
+               <span class="pName">Berry Ice Cream</span>
+                <div class="pNamesec2">
+                <div class="incDec">
+                    <input class="inps" type="button" value="-">
+                    <input class="inps" value="1" readonly>
+                    <input class="inps" type="button" value="+" >
+                </div>
+                <i id="fa-solid" class="fa-solid fa-trash fa-fade"></i>
+            </div>
+              </div>
+              <div class="productDetails">
+                <h1 class="pdel">Quantity:<span>150</span>ml</h1>
+                <h1 class="pdel">A.Price:<span>25</span>Rs</h1>
+                <h1 class="pdel">D.prize:<span>20</span>Rs</h1>
+              </div>
+        </div>
+      </div>
+
+      <div class="cartContainer">
+        <div class="cartImageContainer">
+            <img class="cartImage" src="../Assets/eleven.jpg" alt="">
+        </div>
+        <div class="cartInfoContainer">
+              <div class="productName">
+               <span class="pName">Stick Ice Cream</span>
+                <div class="pNamesec2">
+                <div class="incDec">
+                    <input class="inps" type="button" value="-">
+                    <input class="inps" value="1" readonly>
+                    <input class="inps" type="button" value="+" >
+                </div>
+                <i id="fa-solid" class="fa-solid fa-trash fa-fade"></i>
+            </div>
+              </div>
+              <div class="productDetails">
+                <h1 class="pdel">Quantity:<span>100</span>ml</h1>
+                <h1 class="pdel">A.Price:<span>20</span>Rs</h1>
+                <h1 class="pdel">D.prize:<span>18</span>Rs</h1>
+              </div>
+        </div>
+      </div>
+
+      <div class="cartContainer">
+        <div class="cartImageContainer">
+            <img class="cartImage" src="../Assets/fourteen.jpg" alt="">
+        </div>
+      <div class="cartInfoContainer">
+        <div class="productName">
+          <span class="pName">Vanilla Slice</span>
+          <div class="pNamesec2">
+          <div class="incDec">
+              <input class="inps" type="button" value="-" type="text">
+              <input class="inps" value="1" readonly>
+              <input class="inps" value="+" type="button">
+          </div>
+          <i id="fa-solid" class="fa-solid fa-trash fa-fade"></i>
+      </div>
+        </div>
+        <div class="productDetails">
+          <h1 class="pdel">Quantity:<span>250</span>ml</h1>
+          <h1 class="pdel">A.Price:<span>40</span>Rs</h1>
+          <h1 class="pdel">D.prize:<span>32</span>Rs</h1>
+        </div>
+    </div>
+    </div>
+    <div class="couponCode">
+        Coupon Code:
+        <input id="coupancodeinp" placeholder="Coupon Code" type="text" minlength="6" maxlength="6">
+    </div>
+    <div id="checkoutContainer">
+        <div id="chechoutInfo">
+            <h1 class="checkOutText">No of Product: <span class="impNumber">4</span></h1>
+            <h1 class="checkOutText">Total Cost: <span class="impNumber">190</span>Rs</h1>
+        </div>
+        <input type="button" value="Pay" class="payButton">
+    </div>
+  </div>
+<div id="footerdiv">
+    <footer>
+        <ul class="footerList">
+           <li class="fli">
+              <a href="https://www.facebook.com/profile.php?id=100018656564348" class="fli">
+                  <i class="fa-brands fa-square-facebook"></i>
+                  FaceBook
+              </a>
+           </li>
+           <li class="fli">
+            <a href="https://www.instagram.com/shivam_thakur_0808/" class="fli">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+            </a>
+         </li>
+         <li class="fli">
+            <a href="https://twitter.com/thakur_shi35062" class="fli">
+                <i class="fa-brands fa-twitter"></i>
+                Twitter
+            </a>
+         </li>
+        </ul>
+        <span class="copy">
+            <i id="copy" class="fa-solid fa-copyright"></i>
+            Copyright belongs to the students of jspiders so be ready to to get sued
+        </span>
+      </footer>
+</div>
+<a href="#">
+    <div id="top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+</a> 
+</body>
+</html>

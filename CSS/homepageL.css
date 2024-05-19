@@ -1,0 +1,242 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(180deg,salmon,rgb(120, 224, 224),rgb(236, 192, 110));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x:hidden ;
+}
+.slide1
+{
+    width: 100%;
+}
+.corImg{
+    height: 70vh;
+
+}
+.containerCol
+{
+    box-shadow: 0px 5px 10px burlywood;
+}
+.pageName
+{
+    color: whitesmoke;
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 17%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2vw;
+    font-weight: bolder;
+    font-size: 5vw;
+    text-shadow: 0.2vw 0.2vw 0.5vw rgb(198, 117, 12);
+}
+::-webkit-scrollbar
+{
+    background-image: linear-gradient(180deg,salmon,rgb(120, 224, 224),rgb(236, 192, 110));
+    width: 0.5vw;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: rgb(198, 117, 12);
+    border-radius: 100px;
+}
+#maincontainer
+{
+    padding: 50px;
+    width: 100%;
+    height: auto;
+    /* background-color: aqua; */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    row-gap: 5vw;
+    z-index: 1;
+}
+.productcontainer
+{
+    
+    width: 500px;
+    height: 500px;
+    /* background-color: bisque; */
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    box-shadow: 5px 5px 5px black ;
+    border-radius: 20px;
+    transition: all 0.5;
+    overflow: hidden;
+
+}
+.productimage
+{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    position: absolute;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+.productdetails
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(6, 55, 104);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black ;
+    row-gap: 2vw;
+    letter-spacing: 0.5vw;
+    text-shadow: 2px 2px 5px rgb(62, 62, 145);
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.5s;
+}
+.imagetag
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.cost
+{
+    text-decoration: none;
+    color: rgb(6, 55, 104);
+}
+.productcontainer:hover .productimage
+{
+    transform: translate(-100%);
+}
+.productcontainer:hover .productdetails
+{
+    transform: translate(-100%);
+}
+#review
+{
+    width: 100%;
+    height: 25vw;
+    /* background-color: black; */
+    overflow-y: hidden;
+}
+#review::-webkit-scrollbar
+{
+    display: none;
+}
+.reviewheading
+{
+    width: 100%;
+    height: 3vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(75deg,teal,hotpink,skyblue);
+    background-size: 100%;
+    font-size: 2.5vw;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1vw;
+    color: transparent;
+    background-clip: text;
+}
+#sliderreview
+{
+    width: 380vw;
+    height: 100%;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 5vw;
+    padding: 1vw;
+    overflow-x: auto;
+}
+.productreview
+{
+    width: 30vw;
+    height: 90%;
+    background-color: green;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    position: relative;
+}
+.reviewimg
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.review
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    /* background-color: aquamarine; */
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.reviewtext
+{
+    font-size: 1vw;
+    text-align: center;
+    width: 90%;
+    font-weight: bold;
+    word-spacing: 0.5vw;
+    letter-spacing: 0.1vw;
+    color: white;
+}
+.productreview:hover .review{
+    display: flex;
+}
+.productreview:hover .reviewimg
+{
+    filter: blur(10px) brightness(50%);
+}
+#sliderreview::-webkit-scrollbar
+{
+    display: none;
+}
+#top
+{
+    width: 3vw;
+    height: 3vw;
+    background-color: rgb(137, 137, 217);
+    color: orange;
+    position: fixed;
+    bottom: 2.5vw;
+    right: 0.5vw;
+    font-size: 2vw;
+    display: flex;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+}
+#top:hover
+{
+    animation: toppage 0.4s alternate 4 both ease-in-out;
+}
+@keyframes toppage {
+    from
+    {
+        transform: translate(0vw,0vw);
+    }
+    to
+    {
+        transform: translate(0vw,-2vw);
+    }
+}

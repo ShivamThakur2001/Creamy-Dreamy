@@ -1,0 +1,105 @@
+html
+{
+    scroll-behavior: smooth;
+}
+#foundercontainer,#locationcontainer
+{
+    width: 100vw;
+    height: auto;
+    /* background-color: yellow; */
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+#founderheading,#heading,#locationheading
+{
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    width: 100vw;
+    height: 5vh;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    letter-spacing: 1.5vw;
+    color: aliceblue;
+}
+.pageName
+{
+    color: whitesmoke;
+    text-shadow: 0.2vw 0.2vw 0.5vw rgb(198, 117, 12);
+}
+#founderinfo,#locationinfo
+{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-content: center;
+}
+#containinfo,#locationmap,#loactionadd,#containerimg
+{
+    width: 700px;
+    height: auto;
+    /* background-color: purple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: justify;
+    padding: 2vw;
+    letter-spacing: 0.3vw;
+    word-spacing: 0.2vw;
+    line-height: 2vw;
+    font-size: 2vw;
+}
+.foundername
+{
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 0.3vw;
+    padding: 2vw;
+    color: yellow;
+    font-size: 3vw;
+}
+.fouderimg
+{
+    width: 20vw ;
+    height: 20vw;
+    border-radius:100% ;
+    box-shadow: 2px 2px 2px black, 0px 0px 0px skyblue,0px 0px 0px orange,0px 0px 0px violet,0px 0px 0px lightgreen;
+    animation: shadow1 5s linear infinite both alternate ;
+
+}
+
+@keyframes shadow1 {
+    0%
+    {
+        box-shadow: 2px 2px 2px black, 34px 66px 67px skyblue,45px -35px 46px orange,-78px 44px 78px violet,-35px -67px 50px lightgreen;
+    }
+    25%
+    {
+        box-shadow: 2px 2px 2px black,76px 65px 93px skyblue,45px 90px 60px orange,-70px 30px 46px violet,-100px -45px 100px lightgreen;
+    }
+    50%
+    {
+        box-shadow: 2px 2px 2px black, 86px 66px 98px skyblue,44px -60px 66px orange,-50px 34px 94px violet,-22px -46px 56px lightgreen;
+    }
+    75%
+    {
+        box-shadow: 2px 2px 2px black, -50px -50px 75px skyblue,50px 20px 200px orange,60px -50px 200px violet,-50px 50px 100px lightgreen;
+    }
+    100%
+    {
+        box-shadow: 2px 2px 2px black, 75px -74px 100px skyblue,66px 56px 100px orange,-57px 88px 100px violet,-60px -80px 100px lightgreen;
+    }
+}
+.map
+{
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+    width: 100%;
+}
