@@ -118,6 +118,7 @@ body{
     text-shadow: 2px 2px 2px black;
     color: rgb(73, 73, 73);
     cursor: pointer;
+    margin: 2vw;
 }
 .productDetails{
     width: 70%;
